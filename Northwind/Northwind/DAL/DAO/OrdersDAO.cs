@@ -73,7 +73,7 @@ namespace Northwind.DAL
         /// <returns></returns>
         public bool Delete(int orderID)
         {
-            string query = $@"DELETE FROM Orders Where OrderID ='{orderID}'";
+            string query = $@"  DELETE FROM [dbo].[Order Details] Where OrderID ='{orderID}'; DELETE FROM dbo.Orders Where OrderID ='{orderID}';";
 
             var count = connection.Execute(query, orderID);
 
