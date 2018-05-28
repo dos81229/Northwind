@@ -14,12 +14,7 @@ namespace Northwind.DAL
     {
         public OrdersDAO()
         {
-            var dbConnectionString = AppHelper.GetAppSettingStr("NorthwindContext");
-
-            var connection = ConfigurationManager.ConnectionStrings["NorthwindContext"].ConnectionString;
-
-            var builder = new SqlConnectionStringBuilder(connection);
-            //connection.Open();
+            connection.Open();
         }
 
         /// <summary>
@@ -61,12 +56,12 @@ namespace Northwind.DAL
         /// </summary>
         /// <param name="order"></param>
         /// <returns></returns>
-        public bool Update(Orders order)
+        public bool Update(int ID)
         {
-            string query = $@"UPDATE Orders SET ShipCountry = @ShipCountry
-                              Where OrderID='{order.OrderID}'";
+            string query = $@"UPDATE Orders SET ShipCountry = 'Taiwan'
+                              Where OrderID='{ID}'";
 
-            var count = connection.Execute(query, order);
+            var count = connection.Execute(query, ID);
 
             return count > 0;
         }

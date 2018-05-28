@@ -14,13 +14,7 @@ namespace Northwind.DAL
     {
         public CustomersDAO()
         {
-            var dbConnectionString = AppHelper.GetAppSettingStr("NorthwindContext");
-
-            var connection = ConfigurationManager.ConnectionStrings["NorthwindContext"].ConnectionString;
-
-            var builder = new SqlConnectionStringBuilder(connection);
-
-            //connection.Open();
+            connection.Open();
         }
 
        
