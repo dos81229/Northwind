@@ -23,5 +23,5 @@
         
 # PUT: api/Order/PutOrderTable?ID=10248
 
-# DELETE: api/Order/DeleteOrderTable?ID=11077
+# DELETE: api/Order/DeleteOrderTable?ID=11075
 
