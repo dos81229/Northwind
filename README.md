@@ -1,8 +1,8 @@
-# Northwind
+# Northwind CRUD
 
-GET: api/Order/orderTable?ID=10248 
+# GET: api/Order/orderTable?ID=10248 
 
-POST: api/Order/PostOrderTable
+# POST: api/Order/PostOrderTable
 
         //PostMan test 
         //{ 
@@ -21,7 +21,7 @@ POST: api/Order/PostOrderTable
         //"ShipCountry": "Mexico"
         //}
         
-PUT: api/Order/PutOrderTable?ID=10248
+# PUT: api/Order/PutOrderTable?ID=10248
 
-DELETE: api/Order/DeleteOrderTable?ID=11077
+# DELETE: api/Order/DeleteOrderTable?ID=11077
 
